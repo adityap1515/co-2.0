@@ -5,7 +5,16 @@
 */
 
 function isAnagram(str1, str2) {
-
+  for(i=0; i<str1.length; i++){
+    if(str2.includes(str1[i])){
+      let x = 0; 
+      x++; 
+      if(x == str1.length){
+        console.log(str1 + ", "+str2+" is an anagram")
+      }
+      else{
+        console.log("not an anagram")
+      }
 }
 
 module.exports = isAnagram;
