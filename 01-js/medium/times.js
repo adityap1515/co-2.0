@@ -9,5 +9,16 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let start = performance.now();
+    let end = 0, count = 0, duration = 0;
+
+    for(i=0; i<n; i++){
+        count++;
+    }
+    end = performance.now()
+    duration = (end - start) / 1000;
+    return duration.toFixed(6);
 }
+calculateTime();
+console.log(calculateTime(10000));
+console.log(calculateTime(1000000));
