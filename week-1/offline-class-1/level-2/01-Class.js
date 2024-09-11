@@ -9,4 +9,5 @@ class Animal {
   }
 }
 
-
+let i = new Animal("ANy", 6);
+console.log(i.name);
